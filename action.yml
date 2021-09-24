@@ -5,8 +5,8 @@ DEST_REPO:
   description: 'Repository to push file to. Example: gh_user/repo_name'
   required: true
 
-DEST_REPO_TOKEN:
-  description: 'Github token for this action (create this in your settings)'
+DEST_REPO_DEPLOY_KEY:
+  description: 'private ssh key for this action. public key goes in dest secret settings'
   required: true
 
 runs:

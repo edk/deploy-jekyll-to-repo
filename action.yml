@@ -1,11 +1,11 @@
 name: Jekyll build and publish to other repo
 description: 'Builds & deploys Jekyll to another repos gh-pages'
 
-destination_repo:
+DEST_REPO:
   description: 'Repository to push file to. Example: gh_user/repo_name'
   required: true
 
-token:
+GH_TOKEN:
   description: 'Github token for this action (create this in your settings)'
   required: true
 

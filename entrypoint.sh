@@ -10,6 +10,7 @@ export BUNDLE_BUILD__SASSC=--disable-march-tune-native
 
 echo "Installing gems"
 
+# By placing gems into thsi path, we can cache it in the workflow file with github actions/cache
 bundle config path vendor/bundle
 bundle install --jobs 4
 

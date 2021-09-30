@@ -41,8 +41,8 @@ echo "$DEST_REPO_DEPLOY_KEY" > ~/.ssh/deploy.key
 # When using the ruby-2.7.2 docker image, the debian setup seems to ignore the
 # user-specific ~/.ssh/config file.  This workaround puts the directives
 # into the glboal /etc/ssh/ssh_config instead.
-RUN echo "    IdentityFile /github/home/.ssh/deploy.key" >> /etc/ssh/ssh_config
-RUN echo "    StrictHostKeyChecking no" >> /etc/ssh/ssh_config
+echo "    IdentityFile /github/home/.ssh/deploy.key" >> /etc/ssh/ssh_config
+echo "    StrictHostKeyChecking no" >> /etc/ssh/ssh_config
 
 # ssh doesn't like to work with insecure data files.
 chmod 600 ~/.ssh/*

@@ -33,6 +33,6 @@ jobs:
 
 ## Secrets
 put the public key in the target repo secrets, put the private key in the private repo secrets.
-* (create deploy key)[https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key]  Also: https://docs.github.com/en/enterprise-server@2.22/developers/overview/managing-deploy-keys#deploy-keys
-* (Add it to the destination repo secrets)[https://docs.github.com/en/actions/security-guides/encrypted-secrets]
-* ensure DEST_REPO is the ssh repo path on Github.
+* [create deploy key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)  Also: https://docs.github.com/en/enterprise-server@2.22/developers/overview/managing-deploy-keys#deploy-keys
+* [Add it to the destination repo secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
+* ensure DEST_REPO is the ssh repo path on Github (ends with `.git`).
